@@ -1,0 +1,6 @@
+app:
+  id: service-user
+apollo:
+  bootstrap:
+    enabled: true
+  meta: http://123.207.26.73:8080

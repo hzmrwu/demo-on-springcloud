@@ -1,13 +1,15 @@
+package com.mk.demo.zuul;
+
 import org.springframework.boot.SpringApplication;
-import org.springframework.cloud.client.SpringCloudApplication;
-import org.springframework.cloud.netflix.zuul.EnableZuulServer;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
  * @author Mark
  * @date 2020/11/23
  */
-@EnableZuulServer
-@SpringCloudApplication
+@EnableZuulProxy
+@SpringBootApplication
 public class ZuulApplication {
 
     public static void main(String[] args) {

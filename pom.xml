@@ -13,11 +13,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo-on-springcloud</name>
 	<description>Demo project for Spring Boot</description>
+	<packaging>pom</packaging>
 
 	<modules>
 		<module>demo-zuul</module>
 		<module>demo-eureka</module>
 		<module>demo-apollo</module>
+		<module>demo-service</module>
 	</modules>
 
 	<properties>
@@ -37,6 +39,12 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
