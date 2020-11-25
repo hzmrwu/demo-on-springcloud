@@ -6,18 +6,22 @@
 
     <parent>
         <groupId>com.mk</groupId>
-        <artifactId>demo-on-springcloud</artifactId>
+        <artifactId>demo-service</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <modules>
-        <module>service-user-api</module>
-        <module>service-user-client</module>
-    </modules>
-    <packaging>pom</packaging>
-
-    <artifactId>demo-service</artifactId>
+    <artifactId>service-user-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <properties>
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
