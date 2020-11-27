@@ -20,6 +20,7 @@
 		<module>demo-eureka</module>
 		<module>demo-apollo</module>
 		<module>demo-service</module>
+		<module>service-shop</module>
 	</modules>
 
 	<properties>

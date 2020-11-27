@@ -1,0 +1,7 @@
+app:
+  id: service-shop
+apollo:
+  bootstrap:
+    enabled: true
+  namespaces: application,common
+  meta: http://123.207.26.73:8080
